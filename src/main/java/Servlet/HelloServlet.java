@@ -8,10 +8,10 @@ import java.io.IOException;
 
 public class HelloServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        response.sendRedirect("/test/hello.html");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("hello");
+        response.sendRedirect("hello.html");
     }
 }
